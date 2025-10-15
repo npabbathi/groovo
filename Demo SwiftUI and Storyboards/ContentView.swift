@@ -40,6 +40,7 @@ struct ContentView: View {
                 
                 ForEach(data, id: \.self) { name in
                     Text(name)
+                        .shadow(radius: 2)
                         .frame(maxWidth: .infinity, minHeight: 100)
                         .background(Color(hex: "#FFCC80"))
                         .clipShape(RoundedRectangle(cornerRadius: 20))
